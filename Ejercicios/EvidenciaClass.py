@@ -9,7 +9,7 @@
 # A su vez, cada curso pertenece a alguna de las
 # siguientes categorías (Inicial, Intermedio, Avanzado). 
 
-"""class curso_de_oficio:
+class curso_de_oficio:
     def __init__(self, fecha_comiezo, titulo, descripcion, objetivo, programa, costo, duracion, foto, estado, categoria):
         self.fecha_comienzo = fecha_comiezo
         self.titulo = titulo
@@ -100,7 +100,7 @@ else:
 if curso_2.estado:
     print("El curso de CNC está disponible.")
 else:
-    print("El curso de CNC no está disponible.")"""
+    print("El curso de CNC no está disponible.")
 
 
 
@@ -109,7 +109,7 @@ else:
 # conjunto de clases, en donde por cada clase se debe mostrar la fecha, título, contenido,
 # URLDrive.
 
-"""class Clase:
+class Clase:
     def __init__(self, fecha, titulo, contenido, URLDrive):
         self._fecha = fecha
         self._titulo = titulo
@@ -148,7 +148,7 @@ fecha = info_curso1.get_fecha()
 print("La fecha de la clase:", fecha)
 
 info_curso2.set_titulo("Inicios industriales")
-print("Título de la clase:", info_curso2.get_titulo())"""
+print("Título de la clase:", info_curso2.get_titulo())
 
 
 
@@ -157,7 +157,7 @@ print("Título de la clase:", info_curso2.get_titulo())"""
 # nacimiento, dirección, localidad, código postal, provincia, teléfono celular, email.
 
 
-"""class Docente:
+class Docente:
     def __init__(self, apellido, nombre, dni, fecha_nacimiento, direccion, localidad, cod_postal, provincia, telefono_celular, email):
         self._apellido = apellido
         self._nombre = nombre
@@ -253,7 +253,7 @@ docente2 = Docente("Herrera", "Soledad", "25214589", "03/05/1976", "Avellamea 45
 
 print("Apellido del docente 2:", docente2.get_apellido())
 print("Nombre del docente 2:", docente2.get_nombre())
-print("DNI del docente 2:", docente2.get_dni())"""
+print("DNI del docente 2:", docente2.get_dni())
 
 
 
@@ -264,7 +264,7 @@ print("DNI del docente 2:", docente2.get_dni())"""
 # deberá validar que el email sea verdadero y esté en funcionamiento, enviando un correo
 # automático al email registrado.
 
-"""class Usuario_Final:
+class Usuario_Final:
     def __init__(self, nombre, apellido, dni, fecha_nacimiento, direccion, localidad, codigo_postal, provincia, telefono_celular, email, clave_acceso):
         self.nombre = nombre
         self.apellido = apellido
@@ -292,7 +292,7 @@ usuario1.activar_cuenta()
 
 usuario2 = Usuario_Final("Florencia", "Funes", "405462541", "29/08/1992", "Tablada 589 ", "Cordoba", "5000", "Cordoba", "351236841", "Florgmail.com", "ispc4587")
 
-usuario2.activar_cuenta()"""
+usuario2.activar_cuenta()
 
 
 
@@ -305,7 +305,7 @@ usuario2.activar_cuenta()"""
 # interacción con el sistema: Administrador, Docente. Los usuarios también deben tener
 # asociado un estado (Activo / Inactivo).
 
-"""class Usuario:
+class Usuario:
     def __init__(self, nombre, apellido, dni, direccion, fecha_nacimiento, email, telefono, clave_acceso, estado):
         self.nombre = nombre
         self.apellido = apellido
@@ -386,7 +386,7 @@ print(f"{admin1.nombre} tiene los siguientes roles: {', '.join(admin1.roles)}")
 print(f"Estado de {admin1.nombre}: {admin1.estado}")
 
 print(f"{docente1.nombre} tiene los siguientes roles: {', '.join(docente1.roles)}")
-print(f"Estado de {docente1.nombre}: {docente1.estado}")"""
+print(f"Estado de {docente1.nombre}: {docente1.estado}")
 
 
 
@@ -401,7 +401,7 @@ print(f"Estado de {docente1.nombre}: {docente1.estado}")"""
 # requisitos según el formato de historias de usuario. Para la creación de las historias, hacer uso
 # del repositorio Github, a través de creación de issues.
 
-"""class Usuario_Final:
+class Usuario_Final:
     def __init__(self, nombre, apellido, dni, fecha_nacimiento, direccion, localidad, codigo_postal, provincia, telefono_celular, email, clave_acceso):
         self.nombre = nombre
         self.apellido = apellido
@@ -484,4 +484,4 @@ usuario.agregar_al_carrito(curso2)
 medio_pago = MedioPago("Tarjeta de Crédito", "Número de tarjeta: 1234-5678-1234-5678")
 usuario.seleccionar_medio_pago(medio_pago)
 
-usuario.confirmar_compra()"""
+usuario.confirmar_compra()
