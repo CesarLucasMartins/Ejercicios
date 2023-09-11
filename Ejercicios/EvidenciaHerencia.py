@@ -13,6 +13,8 @@ class Usuario:
         self.provincia = provincia
         self.telefono_celular = telefono_celular
         self.email = email
+        
+    
 
 usuario1 = Usuario("Gaston", "Ferretti", "44528956", "20/03/2001", "Chascomus 454", "Bs As", "0245", "Junin", "0263458974", "Tonga@gmail.com")
 
@@ -26,6 +28,7 @@ print(f"Nombre: {docente1.nombre} {docente1.apellido}")
 print(f"DNI: {docente1.dni}")
 print(f"Email: {docente1.email}")
 print()
+
 
 
 #  Generar una clase nueva que sea compra y contenga:
@@ -87,3 +90,7 @@ print("Tipo de Medio de Contacto:", whatsapp_contacto.Tipo)
 print("Tipo de Medio de Contacto:", correo_contacto.Tipo)
 print("Tipo de Medio de Contacto:", call_center_contacto.Tipo)
 print("Tipo de Medio de Contacto:", referido_interno_contacto.Tipo)
+
+
+        
+        
