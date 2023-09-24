@@ -69,7 +69,7 @@ class Compra:
 # o Nombre
 
 class MediosDeContacto:
-    def __init__(self, Id_MedioContacto, Fecha, Email, Telefono, Direccion, Nombre):
+    def __init__(self, Id_MedioContacto=None, Fecha=None, Email=None, Telefono=None, Direccion=None, Nombre=None):
         self._Id_MedioContacto = Id_MedioContacto
         self._Fecha = Fecha
         self._Email = Email
@@ -121,22 +121,23 @@ class MediosDeContacto:
 
 #  La clase Tipos de Medio de Contacto debe heredar de Medios de contacto.
 
-class TiposDeMedioDeContacto(MediosDeContacto):
-    def __init__(self, Id_MedioContacto, Fecha, Email, Telefono, Direccion, Nombre, Tipo):
-        super().__init__(Id_MedioContacto, Fecha, Email, Telefono, Direccion, Nombre)
-        self._Tipo = Tipo
-      
-    def get_Tipo(self):
-        return self._Tipo
+from enum import Enum
 
-    def set_Tipo(self, nuevo_Tipo):
-        self._Tipo = nuevo_Tipo
-        
-"""compra = Compra("579", "456", "789", "usuario123", "2023-09-11", 500.0)
+class TiposDeMedioDeContacto(MediosDeContacto, Enum):
+    WhatsApp = "WhatsApp"
+    CorreoElectronico = "Correo electrónico"
+    CallCenter = "Call center"
+    ReferidoInterno = "Referido interno"
+
+
+medio_contacto = TiposDeMedioDeContacto.WhatsApp
+print(f"Medio de Contacto: {medio_contacto.value}")
+
+compra = Compra("579", "456", "789", "usuario123", "2023-09-11", 500.0)
 
 id_compra = compra.get_Id_Compra()
 print(f"Id de Compra: {id_compra}")
 nuevo_id_compra = "789"
 compra.set_Id_Compra(nuevo_id_compra)
-print(f"Nuevo Id de Compra: {compra.get_Id_Compra()}")"""
+print(f"Nuevo Id de Compra: {compra.get_Id_Compra()}")
 
